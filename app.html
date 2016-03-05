@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Jamie Burton - Convert number to word</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body ng-app="App">
+
+        <div class="form" ng-controller="InWordsController">
+            <input class="form-input" type="text" placeholder="Input number here..." ng-model="userInput">
+            <button class="form-button" ng-click="convertToWord(userInput)">Convert to Word</button>
+            <p class="form-body">Number is: {{ wordOutput }}</p>
+        </div>
+
+        <script src="js/app.js"></script>
+        <script src="js/data.js"></script>
+    </body>
+
+</html>
