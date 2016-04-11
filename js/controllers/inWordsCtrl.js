@@ -39,8 +39,8 @@
 
         // Converts number to word and outputs into scope
         $scope.convertToWord = function(num) {
-            var tempNum;
             var self = this;
+            var tempNum;
             $scope.checkIfNoNumber();
             $scope.restrictLargeNumbers(num);
             $scope.extractDataFromInput(num);
